@@ -9,9 +9,11 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Setting | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
+    <div class="blank"></div>
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -25,13 +27,13 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__header_column">
-        <a href="index.html">
+      <div class="header__header-column">
+        <a href="index.html" class="header__back-btn">
           <i class="fas fa-arrow-left fa-2x"></i>
         </a>
         <h1 class="header__title">아이유</h1>
       </div>
-      <div class="header__header_column">
+      <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
@@ -40,22 +42,20 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Sunday, June 07,2019</span>
         <li class="incoming-message message">
           <img src="images/IU.jpg" class="g-avatar message__avatar" />
           <div class="message__content">
             <span class="message__author">아이유</span>
-            <div class="message__buble">같이 갈까?</div>
+            <span class="message__bubble">같이 갈까?</span>
           </div>
-          <span class="message__timestamp">02:03</span>
         </li>
 
-        <li class="incoming-message message">
-          <span class="message__timestamp">02:13</span>
+        <li class="sent-message message">
           <div class="message__content">
-            <div class="message__buble">그래.</div>
+            <span class="message__bubble">그래.</span>
           </div>
         </li>
 
@@ -63,9 +63,8 @@
           <img src="images/IU.jpg" class="g-avatar message__avatar" />
           <div class="message__content">
             <span class="message__author">아이유</span>
-            <div class="message__buble">응 내일봐 ~</div>
+            <span class="message__bubble">응 내일봐~</span>
           </div>
-          <span class="message__timestamp">02:13</span>
         </li>
       </ul>
     </main>
@@ -81,10 +80,10 @@
         />
       </div>
       <div class="chat__write-column">
-        <span class="chat__write-cion">
+        <span class="chat__write-icon">
           <i class="far fa-smile"></i>
         </span>
-        <span class="chat__write-cion">
+        <span class="chat__write-icon">
           <i class="fas fa-microphone"></i>
         </span>
       </div>
