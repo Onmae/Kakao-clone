@@ -88,6 +88,7 @@
 
 .sent-message {
   align-self: flex-end;
+  margin-bottom: 40px;
 }
 
 .incoming-message img {
